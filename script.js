@@ -51,6 +51,8 @@ const app = new Vue({
         url: '/makeOrder.php',
         method: 'post',
         data: {
+          totalQuantity: this.totalQuantity,
+          totalPrice: this.totalPrice,
           products: this.products
         },
         success: function(resp) {
